@@ -40,7 +40,7 @@ function WhyChooseUs() {
             </p>
 
             <a
-              href="/services"
+              href="/about"
               className="group mt-8 inline-flex items-center gap-3 rounded-full px-6 py-3 text-sm font-semibold text-black"
               style={{ backgroundColor: ACCENT }}
             >

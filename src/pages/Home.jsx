@@ -8,6 +8,8 @@ import OurWorkProcess from "../components/OurWorkProcess";
 import Partners from "../components/Partners";
 import ContactClients from "../components/ContactClients";
 import Testimonials from "../components/Testimonials";
+// import PortfolioSlider from "./PortfolioSlider";
+import HeroPortfolioSlider from "../components/HeroPortfolioSlider";
 
 function Home() {
   return (
@@ -39,10 +41,10 @@ function Home() {
               {/* Enhanced Heading */}
               <h2 className="leading-[1.08]">
                 <span className="block font-bold text-[28px] sm:text-[40px] md:text-[52px] lg:text-[60px] bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
-                  360° Digital Marketing
+                  360° Digital Marketing for
                 </span>
                 <span className="block -mt-[2px] font-bold text-[28px] sm:text-[40px] md:text-[52px] lg:text-[60px] text-gray-900">
-                  for{" "}
+                  {" "}
                   <span className="relative inline-block font-light">
                     <span className="relative z-10">Memorable Brands</span>
                     <span className="absolute bottom-1 left-0 w-full h-3 bg-orange-200/60 -z-10"></span>
@@ -114,9 +116,13 @@ function Home() {
       <WhyChooseUs />
       <HappyCustomer />
       <Partners />
+      {/* <PortfolioSlider /> */}
+      <HeroPortfolioSlider />
       <OurWorkProcess />
       <Testimonials />
-      <ContactClients />
+      <div className="mb-8 md:mb-12">
+        <ContactClients />
+      </div>
       {/* <Footer /> */}
     </>
   );

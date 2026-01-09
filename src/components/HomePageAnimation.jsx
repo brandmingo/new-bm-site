@@ -110,44 +110,48 @@ function HomePageAnimation() {
             their respective industries.
           </p>
           <div className="mt-10 flex gap-6 items-center">
-            <button className="bg-[#f4a702] hover:bg-orange-500 pl-8 pr-3 py-3 rounded-full font-semibold transition-colors flex items-center gap-4 group">
-              <span className="text-sm tracking-wide">WHAT WE DO</span>
-              <span className="w-10 h-10 bg-black rounded-full flex items-center justify-center group-hover:translate-x-1 transition-transform">
-                <svg
-                  className="w-5 h-5 text-[#d99000]"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2.5}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </span>
-            </button>
-            <button className="border-2 border-gray-300/40 hover:border-gray-200/70 pl-6 pr-3 py-3 rounded-full transition-colors flex items-center gap-3 group bg-transparent">
-              <span className="text-sm tracking-wide text-white">
-                VIEW WORKS
-              </span>
-              <span className="w-10 h-10 border-2 border-gray-300/40 group-hover:border-gray-200/70 rounded-full flex items-center justify-center group-hover:translate-x-1 transition-all bg-transparent">
-                <svg
-                  className="w-5 h-5 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2.5}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </span>
-            </button>
+            <a href="/about">
+              <button className="bg-[#f4a702] hover:bg-orange-500 pl-8 pr-3 py-3 rounded-full font-semibold transition-colors flex items-center gap-4 group">
+                <span className="text-sm tracking-wide">WHAT WE DO</span>
+                <span className="w-10 h-10 bg-black rounded-full flex items-center justify-center group-hover:translate-x-1 transition-transform">
+                  <svg
+                    className="w-5 h-5 text-[#d99000]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2.5}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </a>
+            <a href="/services">
+              <button className="border-2 border-gray-300/40 hover:border-gray-200/70 pl-6 pr-3 py-3 rounded-full transition-colors flex items-center gap-3 group bg-transparent">
+                <span className="text-sm tracking-wide text-white">
+                  VIEW WORKS
+                </span>
+                <span className="w-10 h-10 border-2 border-gray-300/40 group-hover:border-gray-200/70 rounded-full flex items-center justify-center group-hover:translate-x-1 transition-all bg-transparent">
+                  <svg
+                    className="w-5 h-5 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2.5}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </a>
           </div>
         </div>
       </div>

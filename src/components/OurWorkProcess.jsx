@@ -93,7 +93,7 @@ function OurWorkProcess() {
                 </p>
 
                 {/* Learn more button */}
-                <button className="inline-flex items-center gap-2 text-[#f4a702] font-semibold group-hover:gap-3 transition-all">
+                {/* <button className="inline-flex items-center gap-2 text-[#f4a702] font-semibold group-hover:gap-3 transition-all">
                   Learn more
                   <svg
                     className="w-5 h-5"
@@ -108,7 +108,7 @@ function OurWorkProcess() {
                       d="M17 8l4 4m0 0l-4 4m4-4H3"
                     />
                   </svg>
-                </button>
+                </button> */}
 
                 {/* Decorative corner gradient */}
                 <div className="absolute bottom-0 right-0 w-32 h-32 bg-gradient-to-tl from-[#f4a702]/5 to-transparent rounded-tl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -125,9 +125,11 @@ function OurWorkProcess() {
           <p className="text-gray-600 text-lg mb-6">
             Ready to transform your brand?
           </p>
-          <button className="px-8 py-4 bg-gradient-to-r from-[#f4a702] to-orange-600 text-white font-semibold rounded-full hover:shadow-2xl hover:shadow-[#f4a702]/50 transition-all duration-300 hover:scale-105">
-            Get Started Today
-          </button>
+          <a href="/contact">
+            <button className="px-8 py-4 bg-gradient-to-r from-[#f4a702] to-orange-600 text-white font-semibold rounded-full hover:shadow-2xl hover:shadow-[#f4a702]/50 transition-all duration-300 hover:scale-105">
+              Get Started Today
+            </button>
+          </a>
         </div>
       </div>
     </section>

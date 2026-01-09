@@ -239,41 +239,41 @@ function Testimonials() {
 
   const testimonials = [
     {
-      name: "Candy Singh",
-      company: "Magic Mushroom",
-      logo: "/testimonials/magic-mushroom.png",
-      text: "Superb, These guys are just superb when it comes to creating and executing new ideas. Digipanda consulting helped my company in designing and executing some very difficult ideas.",
+      name: "Amit Goyal",
+      company: "client",
+      logo: "/src/assets/images/TestimonialImages/images-1.webp",
+      text: "SChoosing Brandmingo as our digital marketing agency was one of the best decisions we made for our business. Their expertise and strategic insights have transformed our online brand image and increased our website traffic significantly.",
     },
     {
-      name: "Meiying Liang",
-      company: "Phantom Pen",
-      logo: "/testimonials/phantom-pen.png",
-      text: "Digipanda has done a lot of web design and development work for us over the past six years. The design team is very patient they are willing to work with clients by building relationships.",
+      name: "Rahul Jain",
+      company: "client",
+      logo: "/src/assets/images/TestimonialImages/images-2.jpg",
+      text: "Working with Brandmingo has been a game-changer for our business. Their integrated digital marketing strategies have significantly improved our online visibility and customer engagement. They've not only increased our website traffic but also our revenue.",
     },
     {
-      name: "John Doe",
-      company: "Tech Solutions",
-      logo: "/testimonials/tech-solutions.png",
-      text: "Working with Digipanda has been an absolute pleasure. Their attention to detail and commitment to delivering quality work is unmatched.",
+      name: "Arun Kumar",
+      company: "client",
+      logo: "/src/assets/images/TestimonialImages/images-3.jpg",
+      text: "Brandmingo has been an invaluable partner in growing our brand online. Their dedication, innovative strategies, and attention to detail have resulted in remarkable ROI.  Thanks to their efforts, our brand is thriving in the digital space. Excellent work!",
     },
-    {
-      name: "Sarah Johnson",
-      company: "Creative Studio",
-      logo: "/testimonials/creative-studio.png",
-      text: "The team at Digipanda exceeded all our expectations. From the initial consultation to the final delivery, everything was handled professionally.",
-    },
-    {
-      name: "Michael Chen",
-      company: "Digital Ventures",
-      logo: "/testimonials/digital-ventures.png",
-      text: "Outstanding service and incredible results. The Digipanda team brought our vision to life beyond what we imagined possible.",
-    },
-    {
-      name: "Emma Wilson",
-      company: "Brand Factory",
-      logo: "/testimonials/brand-factory.png",
-      text: "Professional, creative, and always delivering on time. Working with Digipanda has transformed our digital presence completely.",
-    },
+    // {
+    //   name: "Sarah Johnson",
+    //   company: "Creative Studio",
+    //   logo: "/testimonials/creative-studio.png",
+    //   text: "The team at Digipanda exceeded all our expectations. From the initial consultation to the final delivery, everything was handled professionally.",
+    // },
+    // {
+    //   name: "Michael Chen",
+    //   company: "Digital Ventures",
+    //   logo: "/testimonials/digital-ventures.png",
+    //   text: "Outstanding service and incredible results. The Digipanda team brought our vision to life beyond what we imagined possible.",
+    // },
+    // {
+    //   name: "Emma Wilson",
+    //   company: "Brand Factory",
+    //   logo: "/testimonials/brand-factory.png",
+    //   text: "Professional, creative, and always delivering on time. Working with Digipanda has transformed our digital presence completely.",
+    // },
   ];
 
   // Duplicate testimonials for infinite scroll effect

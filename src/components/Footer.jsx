@@ -95,27 +95,37 @@ function Footer() {
           </div>
 
           {/* Services */}
+          {/* Services */}
           <div className="lg:col-span-3">
             <h3 className="text-white text-lg font-bold mb-6 relative inline-block">
               Our Offerings
               <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-gradient-to-r from-[#f4a702] to-orange-600"></span>
             </h3>
+
             <ul className="space-y-3">
               {[
-                "Web Development",
-                "Ads and Campaigns",
-                "Social Media Marketing",
-                "UI/UX and Audits",
-                "Brand Identity",
-                "SEO Optimizing",
+                { name: "Web Development", link: "/services/webdevelopment" },
+                {
+                  name: "Design",
+                  link: "/services/design",
+                },
+                {
+                  name: "Marketing",
+                  link: "/services/marketing",
+                },
+                {
+                  name: "Ecommerce Account Management",
+                  link: "/e-commerce-account-management",
+                },
+                { name: "SEO Optimizing", link: "/services/seo-optimizing" },
               ].map((service) => (
-                <li key={service}>
+                <li key={service.name}>
                   <a
-                    href="/services"
+                    href={service.link}
                     className="text-gray-400 hover:text-orange-500 transition-colors flex items-center group"
                   >
                     <span className="w-0 group-hover:w-2 h-0.5 bg-orange-500 mr-0 group-hover:mr-2 transition-all"></span>
-                    {service}
+                    {service.name}
                   </a>
                 </li>
               ))}

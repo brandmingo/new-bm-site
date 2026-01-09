@@ -358,7 +358,7 @@ export default function WhatWeDo() {
             </h2>
             <div className="hidden md:block" />
             <a
-              href="#what-we-do-grid"
+              href="/services"
               className="justify-self-start md:justify-self-end group inline-flex items-center gap-3 rounded-full px-6 py-3 text-sm font-semibold shadow-lg hover:shadow-xl hover:shadow-[#f4a702]/50 transition-all hover:scale-105"
               style={{ backgroundColor: ACCENT, color: "#111" }}
             >

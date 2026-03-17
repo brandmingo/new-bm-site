@@ -9,6 +9,8 @@ const CLIENTS = Array.from({ length: 19 }, (_, i) => ({
   logo: `/src/assets/images/ClientLogos/${i + 1}.png`,
 }));
 
+// pradeep
+
 function About() {
   return (
     <div className="min-h-screen text-white relative overflow-hidden">
@@ -164,12 +166,12 @@ function About() {
       <div className="flex animate-scroll-left pause-animation">
         {[...CLIENTS, ...CLIENTS].map((client, index) => (
           <div key={index} className="group shrink-0 mx-4 p-6 rounded-2xl bg-linear-to-br from-gray-900/50 to-black border border-gray-700/50 hover:border-[#f4a702]/60 transition-all duration-300 w-55 h-35 flex items-center justify-center">
-  <img 
-    src={client.logo} 
-    alt={client.name} 
+  <img
+    src={client.logo}
+    alt={client.name}
     className="w-auto h-auto max-w-full max-h-24 object-contain transition-all duration-500 brightness-0 invert opacity-60 group-hover:brightness-100 group-hover:invert-0 group-hover:opacity-100 group-hover:scale-110"
-    style={{ mixBlendMode: 'screen' }} 
-    onError={(e) => { e.target.style.display = "none"; }} 
+    style={{ mixBlendMode: 'screen' }}
+    onError={(e) => { e.target.style.display = "none"; }}
   />
 </div>
         ))}
@@ -181,12 +183,12 @@ function About() {
       <div className="flex animate-scroll-right pause-animation">
         {[...CLIENTS, ...CLIENTS].reverse().map((client, index) => (
           <div key={`bottom-${index}`} className="group shrink-0 mx-4 p-6 rounded-2xl bg-linear-to-br from-gray-900/50 to-black border border-gray-700/50 hover:border-[#f4a702]/60 transition-all duration-300 w-55 h-35 flex items-center justify-center">
-            <img 
-              src={client.logo} 
-              alt={client.name} 
-              loading="lazy" 
-              className="w-auto h-auto max-w-full max-h-24 object-contain transition-all duration-300 brightness-0 invert opacity-60 group-hover:brightness-100 group-hover:invert-0 group-hover:opacity-100 group-hover:scale-110" 
-              onError={(e) => { e.target.style.display = "none"; }} 
+            <img
+              src={client.logo}
+              alt={client.name}
+              loading="lazy"
+              className="w-auto h-auto max-w-full max-h-24 object-contain transition-all duration-300 brightness-0 invert opacity-60 group-hover:brightness-100 group-hover:invert-0 group-hover:opacity-100 group-hover:scale-110"
+              onError={(e) => { e.target.style.display = "none"; }}
             />
           </div>
         ))}

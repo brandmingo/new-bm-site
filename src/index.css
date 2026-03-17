@@ -1,14 +1,23 @@
 @import "tailwindcss";
 
-/* :root {
-  --font-primary: "Poppins", sans-serif;
+@theme {
+  /* 1. Define the Keyframes */
+  @keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @keyframes scroll-right {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+
+  /* 2. Map to Tailwind Classes */
+  --animate-scroll-left: scroll-left 40s linear infinite;
+  --animate-scroll-right: scroll-right 40s linear infinite;
 }
 
-body {
-  font-family: var(--font-primary);
-} */
-
-
-/* <h1 className="font-[var(--font-primary)] text-5xl font-semibold">
-  BrandMingo Digital Agency
-</h1> */
+/* 3. Utility for the hover pause effect */
+.pause-animation:hover {
+  animation-play-state: paused !important;
+}

@@ -59,10 +59,10 @@ function Footer() {
                   { icon: FaLinkedin, label: "LinkedIn" },
                   { icon: FaXTwitter, label: "X (Twitter)" },
                   { icon: FaYoutube, label: "YouTube" },
-                ].map(({ icon: IconComponent, label }, i) => (
+                ].map(({ icon: IconComponent, label, url }, i) => (
                   <a
                     key={i}
-                    href="#"
+                    href={url}
                     aria-label={label}
                     className="w-10 h-10 bg-white/5 backdrop-blur-sm border border-gray-800 rounded-lg flex items-center justify-center hover:bg-gradient-to-r hover:from-orange-500 hover:to-orange-600 hover:border-transparent transition-all hover:scale-110 hover:shadow-lg hover:shadow-orange-500/30"
                   >

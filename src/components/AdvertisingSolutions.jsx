@@ -99,7 +99,7 @@ const AdvertisingSolutions = () => {
           {platforms.map((platform, index) => (
             <div
               key={index}
-              className={`group bg-gradient-to-br from-gray-900/80 to-black border-2 border-gray-800 rounded-2xl p-8 hover:border-[#f4a702]/50 hover:shadow-2xl hover:shadow-[#f4a702]/20 transition-all duration-500 transform hover:-translate-y-2 ${
+              className={`group bg-linear-to-br from-gray-900/80 to-black border-2 border-gray-800 rounded-2xl p-8 hover:border-[#f4a702]/50 hover:shadow-2xl hover:shadow-[#f4a702]/20 transition-all duration-500 transform hover:-translate-y-2 ${
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-10"

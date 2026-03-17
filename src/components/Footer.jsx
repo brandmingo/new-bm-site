@@ -13,7 +13,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-gray-300 relative overflow-hidden">
+    <footer className="bg-linear-to-br from-gray-900 via-black to-gray-900 text-gray-300 relative overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
@@ -43,7 +43,7 @@ function Footer() {
                   placeholder="Enter your email"
                   className="w-full px-5 py-3 bg-white/10 backdrop-blur-sm border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-all"
                 />
-                <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-gradient-to-r from-orange-500 to-orange-600 text-white p-2 rounded-md hover:shadow-lg hover:shadow-orange-500/50 transition-all group-hover:scale-105">
+                <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-linear-to-r from-orange-500 to-orange-600 text-white p-2 rounded-md hover:shadow-lg hover:shadow-orange-500/50 transition-all group-hover:scale-105">
                   <FaArrowRight className="text-sm" />
                 </button>
               </div>
@@ -54,17 +54,17 @@ function Footer() {
               <h4 className="text-white font-semibold mb-3">Follow Us</h4>
               <div className="flex gap-3">
                 {[
-                  { icon: FaFacebook, label: "Facebook" },
-                  { icon: FaInstagram, label: "Instagram" },
-                  { icon: FaLinkedin, label: "LinkedIn" },
-                  { icon: FaXTwitter, label: "X (Twitter)" },
-                  { icon: FaYoutube, label: "YouTube" },
+                  { icon: FaFacebook, label: "Facebook", url: " https://www.facebook.com/brandmingo" },
+                  { icon: FaInstagram, label: "Instagram", url: "https://www.instagram.com/brandmingo?igsh=dmZoeHBraWI0b2xh" },
+                  { icon: FaLinkedin, label: "LinkedIn", url: "https://www.linkedin.com/company/96415644/admin/dashboard/" },
+                  { icon: FaXTwitter, label: "X (Twitter)", url:"https://x.com/brandmingo" },
+                  { icon: FaYoutube, label: "YouTube", url:"www.youtube.com/@Brandmingo" },
                 ].map(({ icon: IconComponent, label, url }, i) => (
                   <a
                     key={i}
                     href={url}
                     aria-label={label}
-                    className="w-10 h-10 bg-white/5 backdrop-blur-sm border border-gray-800 rounded-lg flex items-center justify-center hover:bg-gradient-to-r hover:from-orange-500 hover:to-orange-600 hover:border-transparent transition-all hover:scale-110 hover:shadow-lg hover:shadow-orange-500/30"
+                    className="w-10 h-10 bg-white/5 backdrop-blur-sm border border-gray-800 rounded-lg flex items-center justify-center hover:bg-linear-to-r hover:from-orange-500 hover:to-orange-600 hover:border-transparent transition-all hover:scale-110 hover:shadow-lg hover:shadow-orange-500/30"
                   >
                     <IconComponent className="text-lg" />
                   </a>
@@ -77,7 +77,7 @@ function Footer() {
           <div className="lg:col-span-2">
             <h3 className="text-white text-lg font-bold mb-6 relative inline-block">
               Quick Links
-              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-gradient-to-r from-[#f4a702] to-orange-600"></span>
+              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-linear-to-r from-[#f4a702] to-orange-600"></span>
             </h3>
             <ul className="space-y-3">
               {["Home", "About", "Services", "Blog", "Contact"].map((link) => (
@@ -99,7 +99,7 @@ function Footer() {
           <div className="lg:col-span-3">
             <h3 className="text-white text-lg font-bold mb-6 relative inline-block">
               Our Offerings
-              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-gradient-to-r from-[#f4a702] to-orange-600"></span>
+              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-linear-to-r from-[#f4a702] to-orange-600"></span>
             </h3>
 
             <ul className="space-y-3">
@@ -136,11 +136,11 @@ function Footer() {
           <div className="lg:col-span-3">
             <h3 className="text-white text-lg font-bold mb-6 relative inline-block">
               Get In Touch
-              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-gradient-to-r from-[#f4a702] to-orange-600"></span>
+              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-linear-to-r from-[#f4a702] to-orange-600"></span>
             </h3>
             <div className="space-y-4">
               <div className="flex items-start gap-3 group">
-                <div className="w-10 h-10 bg-orange-500/10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-orange-500/20 transition-all">
+                <div className="w-10 h-10 bg-orange-500/10 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-orange-500/20 transition-all">
                   <FaMapMarkerAlt className="text-[#f4a702]" />
                 </div>
                 <a
@@ -155,7 +155,7 @@ function Footer() {
               </div>
 
               <div className="flex items-center gap-3 group">
-                <div className="w-10 h-10 bg-orange-500/10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-orange-500/20 transition-all">
+                <div className="w-10 h-10 bg-orange-500/10 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-orange-500/20 transition-all">
                   <FaPhoneAlt className="text-[#f4a702]" />
                 </div>
                 <div className="flex flex-col gap-1">
@@ -175,7 +175,7 @@ function Footer() {
               </div>
 
               <div className="flex items-center gap-3 group">
-                <div className="w-10 h-10 bg-orange-500/10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-orange-500/20 transition-all">
+                <div className="w-10 h-10 bg-orange-500/10 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-orange-500/20 transition-all">
                   <FaEnvelope className="text-[#f4a702]" />
                 </div>
                 <a
